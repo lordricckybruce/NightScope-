@@ -45,3 +45,14 @@ NightScope/
 5. Result Processing: Python GUI collects scan results, displays detailed output.
    and a summarized list.
 6. Exports And Reporting: Saves result as JSON files and as text files for further analysis.
+
+#HOW TO USE
+-->> cd go_scanner
+ go build -o scanner scanner.go
+#RUN CLI
+'''bash
+python3 cli_interface/ngsp.py --scan <dns/ip> --max 1000
+
+#RUN GUI
+
+python3 python_gui/gui_nightscope.py 
