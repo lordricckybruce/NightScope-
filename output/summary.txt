@@ -1,0 +1,4 @@
+Scan result for: scanme.nmap.org
+Total Open Ports: 2
+Port 22 ➜ SSH
+Port 80 ➜ HTTP

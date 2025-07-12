@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+scanner
+output/
+*.json
+*.txt
+nightscope.ico

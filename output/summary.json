@@ -1,0 +1,10 @@
+{
+    "target": "google.com",
+    "open_ports": [
+        {
+            "port": 80,
+            "service": "HTTP"
+        }
+    ],
+    "timestamp": "Sat Jul 12 03:21:47 2025"
+}

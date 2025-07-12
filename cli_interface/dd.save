@@ -1,0 +1,60 @@
+Should I now create:
+
+    run.sh → Automates Go build + runs scanner ✅
+
+    Root README.md → Full NightScope overview + Go/Python usage ✅
+
+    requirements.txt → All Python packages ✅
+
+Let me know which you want next.
+/NightScope/
+├── go_scanner/
+│   ├── scanner.go          ✅ (Done - Go backend scanner)
+│   ├── run.sh              🟨 (Pending: needs to automate scanner build/run)
+│   └── README.md           🟨 (Pending: explanation for Go usage + how-to)
+
+├── python_gui/
+│   ├── gui_nightscope.py   ✅ (Done - Functional GUI with CLI mode toggle)
+│   ├── requirements.txt    🟨 (Pending: list Python dependencies)
+│   └── README.md           🟨 (Pending: GUI overview + instructions)
+
+├── cli_interface/
+│   ├── ngsp.py             🟥 (❌ Not yet created – CLI port scan command)
+│   └── README.md           🟨 (Pending)
+
+├── output/
+│   ├── results.json        🟨 (Auto-generated after scan)
+│   └── summary.txt         🟨 (Auto-generated after scan)
+
+├── README.md               🟨 (Project overview – high-level explanation)
+# NightScope 🔭
+
+**Fast, Stealthy Port Scanner using Go (Backend) + Python (GUI/CLI)**  
+Author: Alexander Ireka  
+Built with 💻 by Alexander & Mr. Kulian
+
+---
+
+## 🔧 Why Go?
+- **Speed**: Go's compiled nature enables faster network operations than Python.
+- **Stealth**: Go’s low-level control over sockets allows better control of packet behavior, helping bypass IDS/IPS and firewall rules.
+- **Portability**: Build once, run anywhere.
+
+---
+
+## 🧠 Operational Mechanism
+
+NightScope performs reconnaissance using the following workflow:
+
+1. **User Input**: Target IP/DNS is entered (via GUI or CLI).
+2. **Scanner Execution**: The backend Go scanner performs fast parallel TCP port probing.
+3. **Result Parsing**: Results are displayed in real-time and mapped to known services.
+4. **Export**: Results are saved in `summary.txt` and `summary.json`.
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/yourname/NightScope.git
+cd NightScope
